@@ -21,6 +21,8 @@
     "lib",
     "locale",
     "docs",
+    "assets",
+    "screenshots.json",
     "README.md",
     "LICENSE"
   ],

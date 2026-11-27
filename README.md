@@ -1,10 +1,24 @@
-﻿# dsh-connect-doubao-pool · 豆包多账号
+# dsh-connect-doubao-pool · 豆包多账号
 
 给 DeepSeek Harness 一个**自带豆包工作 provider**（`doubao-pool`，显示「豆包工作（多账号）」）+ **账号池**：扫码收纳多个豆包账号，逐号检测可用性与额度，一键切换当前使用的那一个，额度用尽自动换号。
 
 - 设置 → 豆包多账号：账号池主界面（模型勾选也在里面）
 - 模型选择器里会多出「豆包工作（多账号）」分组，不需要装豆包插件
 - 平台：Windows（凭据用 DPAPI 当前用户加密）
+
+## 界面
+
+设置 → 豆包多账号（蓝底豆图标）：
+
+![账号池](assets/screenshots/2-account-pool.png)
+
+模型选择器里多一组「豆包工作（多账号）」，第三方模型带倍率徽章：
+
+![模型选择器](assets/screenshots/3-models.png)
+
+输入框右侧的额度读数，点开是逐号面板（切号、刷新、跳设置）：
+
+![额度面板](assets/screenshots/4-quota-panel.png)
 
 目录结构：
 
