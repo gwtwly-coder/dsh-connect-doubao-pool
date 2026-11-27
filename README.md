@@ -1,10 +1,9 @@
-# dsh-connect-doubao-pool · 豆包多账号
+﻿# dsh-connect-doubao-pool · 豆包多账号
 
 给 DeepSeek Harness 一个**自带豆包工作 provider**（`doubao-pool`，显示「豆包工作（多账号）」）+ **账号池**：扫码收纳多个豆包账号，逐号检测可用性与额度，一键切换当前使用的那一个，额度用尽自动换号。
 
 - 设置 → 豆包多账号：账号池主界面（模型勾选也在里面）
 - 模型选择器里会多出「豆包工作（多账号）」分组，不需要装豆包插件
-- 依赖：`dsh-connect-doubao` ≥ 0.8.0 **可选**（装着它时扫号更省事）
 - 平台：Windows（凭据用 DPAPI 当前用户加密）
 
 目录结构：
@@ -20,20 +19,30 @@ cordis.patch.yml         bundle 注册
 docs/DETAIL.md           插件详情页正文
 docs/preview.svg         详情页预览图
 locale/{zh,en}.json      本地化标题与描述
-test/smoke-client.mjs    客户端离线冒烟（26 项）
+test/smoke-client.mjs    客户端离线冒烟
 test/protocol.test.mjs   工具围栏解析单测（不联网）
 test/stream.test.mjs     真实对话冒烟：用池里的号跑一次豆包（联网）
+LICENSE                  MIT（本项目）
 ```
 
-安装（在 DSH 里）：
+## 安装
+
+DSH → 设置 → 内置插件 → 添加插件，把下面这行贴进输入框，点安装，然后刷新窗口：
+
+```
+https://github.com/gwtwly-coder/dsh-connect-doubao-pool
+```
+
+装完不用配任何东西（本插件没有构建脚本，pnpm 不会拦 prepare），也没有 npm 之外的运行时依赖。
+本地开发时改用绝对路径安装：
 
 ```
 plugin_manager { action: "install_bundle", target: "D:\\projects\\豆包多账号插件" }
 ```
 
-再用 `application` 字段确认已生效，然后刷新前端。改过 host 代码后要
+用 `application` 字段确认已生效（应为 `"applied"`），然后刷新前端。改过 host 代码后要
 `plugin_manager { action: "set_plugin", target: "include:dsh-connect-doubao-pool", enabled: false }`
-再 `true` 才会载入新代码。
+再 `true` 才会载入新代码；只改 `client.js` 的话刷新页面就够。
 
 自检：
 
