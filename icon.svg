@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="豆包多账号">
+  <defs>
+    <linearGradient id="dbpIconBg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b7bff"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#dbpIconBg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18.5 22.5h27"/>
+    <path d="M32 15.5v7"/>
+    <path d="M21.5 31.5h21v6.4a10.5 10.5 0 0 1-10.5 10.5A10.5 10.5 0 0 1 21.5 37.9z"/>
+  </g>
+  <circle cx="47.5" cy="16.5" r="5.5" fill="#22c55e" stroke="#1d4ed8" stroke-width="2"/>
+</svg>

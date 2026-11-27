@@ -1,0 +1,7 @@
+{
+  "title": "Doubao Accounts",
+  "description": "An account pool for Doubao Work: scan to add accounts, probe quota per account, switch the active one in a click. Models and chat come from this plugin's own provider, no other plugin needed.",
+  "nav": {
+    "label": "Doubao Accounts"
+  }
+}

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" role="img" aria-label="豆包多账号 设置页预览">
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="760" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#1b1e25"/>
+    </linearGradient>
+    <linearGradient id="pBrand" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b7bff"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <style>
+      .t { font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif; }
+      .h1 { font-size: 17px; font-weight: 600; fill: #e9ecf2; }
+      .h2 { font-size: 13px; font-weight: 600; fill: #e9ecf2; }
+      .sub { font-size: 11.5px; fill: #98a0ad; }
+      .cell { font-size: 12px; fill: #e9ecf2; }
+      .dim { font-size: 11px; fill: #98a0ad; }
+      .th { font-size: 10.5px; fill: #8b93a1; letter-spacing: .08em; }
+      .ok { font-size: 12px; fill: #3ecf8e; }
+      .badge { font-size: 10px; fill: #ffffff; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="760" height="470" fill="url(#pBg)"/>
+
+  <!-- 设置页左侧导航，图1 那一块 -->
+  <g>
+    <rect x="0" y="0" width="188" height="470" fill="#101216"/>
+    <line x1="188" y1="0" x2="188" y2="470" stroke="#262a33"/>
+    <g>
+      <rect x="16" y="26" width="20" height="20" rx="5" fill="#2b2f39"/>
+      <text class="t h2" x="46" y="41">WorkBuddy</text>
+      <rect x="16" y="62" width="20" height="20" rx="5" fill="#24282f"/>
+      <text class="t cell" x="46" y="77" fill="#9aa1ac">豆包</text>
+      <rect x="12" y="94" width="164" height="30" rx="7" fill="#1c2028" stroke="#2f6bff" stroke-opacity=".55"/>
+      <rect x="18" y="100" width="20" height="20" rx="5" fill="url(#pBrand)"/>
+      <path d="M22 106.5h12M28 103.2v3.3M23.6 110.6h8.8v2.6a4.4 4.4 0 0 1-8.8 0z" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="t cell" x="46" y="114" fill="#e9ecf2">豆包多账号</text>
+      <rect x="16" y="140" width="20" height="20" rx="5" fill="#24282f"/>
+      <text class="t cell" x="46" y="155" fill="#9aa1ac">外观</text>
+    </g>
+  </g>
+
+  <!-- 主区 -->
+  <g transform="translate(214, 26)">
+    <text class="t h1" x="0" y="10">账号池</text>
+    <text class="t sub" x="0" y="30">把多个豆包账号收在这里，随时切换当前使用的那一个。</text>
+
+    <!-- 开关卡 -->
+    <rect x="0" y="44" width="512" height="72" rx="10" fill="#1a1d24" stroke="#272b34"/>
+    <text class="t h2" x="16" y="70">启用账号池</text>
+    <rect x="96" y="60" width="52" height="15" rx="7.5" fill="#22262e"/>
+    <text class="t badge" x="104" y="71" fill="#9aa1ac" font-weight="500">自动挑号</text>
+    <rect x="452" y="60" width="38" height="21" rx="10.5" fill="#2f6bff"/>
+    <circle cx="479" cy="70.5" r="8" fill="#fff"/>
+    <text class="t dim" x="16" y="95">启用后，当前账号失效时按顺序换到下一个可用账号。</text>
+
+    <!-- 账号表 -->
+    <rect x="0" y="128" width="512" height="256" rx="10" fill="#1a1d24" stroke="#272b34"/>
+    <line x1="16" y1="340" x2="496" y2="340" stroke="#272b34"/>
+    <text class="t h2" x="16" y="153">本池包含的账号</text>
+    <text class="t dim" x="112" y="153">已选 3/3</text>
+    <g>
+      <rect x="330" y="139" width="34" height="21" rx="6" fill="none" stroke="#31363f"/>
+      <text class="t dim" x="337" y="153">全选</text>
+      <rect x="370" y="139" width="46" height="21" rx="6" fill="none" stroke="#31363f"/>
+      <text class="t dim" x="377" y="153">全不选</text>
+      <rect x="422" y="139" width="74" height="21" rx="6" fill="none" stroke="#31363f"/>
+      <text class="t dim" x="429" y="153">测试勾选的账号</text>
+    </g>
+    <text class="t th" x="16" y="176">账号</text>
+    <text class="t th" x="252" y="176">额度</text>
+    <text class="t th" x="356" y="176">状态</text>
+    <text class="t th" x="470" y="176">操作</text>
+    <line x1="16" y1="184" x2="496" y2="184" stroke="#272b34"/>
+
+    <!-- 行 1（当前使用） -->
+    <rect x="8" y="190" width="496" height="46" rx="7" fill="#1d2433" stroke="#2f6bff" stroke-opacity=".5"/>
+    <rect x="18" y="206" width="13" height="13" rx="3" fill="#2f6bff" stroke="#2f6bff"/>
+    <path d="M20.5 212.5l2.4 2.4 5-5.4" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="t dim" x="40" y="216">第1位</text>
+    <text class="t cell" x="82" y="211">我的豆包</text>
+    <rect x="140" y="200" width="52" height="16" rx="8" fill="#2f6bff"/>
+    <text class="t badge" x="148" y="211">当前使用</text>
+    <text class="t dim" x="82" y="225">加入于 3 天前</text>
+    <text class="t cell" x="252" y="211">剩余 78%</text>
+    <text class="t dim" x="252" y="225">2 小时 12 分后重置</text>
+    <circle cx="360" cy="211" r="3.5" fill="#3ecf8e"/>
+    <text class="t ok" x="370" y="215">可用</text>
+    <text class="t dim" x="360" y="225">测得 5 分钟前</text>
+    <rect x="404" y="202" width="44" height="22" rx="6" fill="#22262e"/>
+    <text class="t dim" x="412" y="217">使用中</text>
+    <rect x="454" y="202" width="40" height="22" rx="6" fill="none" stroke="#31363f"/>
+    <text class="t dim" x="462" y="217">测试</text>
+
+    <!-- 行 2 -->
+    <rect x="8" y="240" width="496" height="44" rx="7" fill="none"/>
+    <rect x="18" y="254" width="13" height="13" rx="3" fill="none" stroke="#454b57"/>
+    <text class="t dim" x="40" y="265">第2位</text>
+    <text class="t cell" x="82" y="260">备用账号</text>
+    <text class="t dim" x="82" y="274">加入于 1 天前</text>
+    <text class="t cell" x="252" y="260">剩余 96%</text>
+    <text class="t dim" x="252" y="274">开始使用后计时</text>
+    <circle cx="360" cy="260" r="3.5" fill="#3ecf8e"/>
+    <text class="t ok" x="370" y="264">可用</text>
+    <text class="t dim" x="360" y="274">测得 5 分钟前</text>
+    <rect x="404" y="251" width="44" height="22" rx="6" fill="#2f6bff"/>
+    <text class="t badge" x="416" y="266">切换</text>
+    <rect x="454" y="251" width="40" height="22" rx="6" fill="none" stroke="#31363f"/>
+    <text class="t dim" x="462" y="266">测试</text>
+
+    <!-- 行 3 -->
+    <rect x="8" y="288" width="496" height="44" rx="7" fill="none"/>
+    <rect x="18" y="302" width="13" height="13" rx="3" fill="none" stroke="#454b57"/>
+    <text class="t dim" x="40" y="313">第3位</text>
+    <text class="t cell" x="82" y="308">小号</text>
+    <text class="t dim" x="82" y="322">加入于 刚刚</text>
+    <text class="t cell" x="252" y="308">剩余 4%</text>
+    <text class="t dim" x="252" y="322">18 分钟后重置</text>
+    <circle cx="360" cy="308" r="3.5" fill="#ff6b6b"/>
+    <text class="t bad" x="370" y="312" fill="#ff6b6b">额度耗尽</text>
+    <text class="t dim" x="360" y="322">测得 刚刚</text>
+    <rect x="404" y="299" width="44" height="22" rx="6" fill="#2f6bff"/>
+    <text class="t badge" x="416" y="314">切换</text>
+    <rect x="454" y="299" width="40" height="22" rx="6" fill="none" stroke="#31363f"/>
+    <text class="t dim" x="462" y="314">测试</text>
+
+    <!-- 底部按钮 -->
+    <rect x="16" y="346" width="96" height="26" rx="7" fill="#2f6bff"/>
+    <text class="t badge" x="28" y="363">扫码添加账号</text>
+    <rect x="120" y="346" width="74" height="26" rx="7" fill="none" stroke="#31363f"/>
+    <text class="t dim" x="130" y="363">导出账号</text>
+    <rect x="202" y="346" width="74" height="26" rx="7" fill="none" stroke="#31363f"/>
+    <text class="t dim" x="212" y="363">导入账号</text>
+
+    <text class="t dim" x="0" y="368" fill="#6f7783" opacity="0">.</text>
+    <text class="t dim" x="0" y="368" opacity="0">.</text>
+    <text class="t dim" x="16" y="368" opacity="0">.</text>
+  </g>
+</svg>

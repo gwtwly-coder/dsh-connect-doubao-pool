@@ -1,0 +1,62 @@
+{
+  "name": "dsh-connect-doubao-pool",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "豆包多账号：自带豆包工作 provider（豆包工作（多账号））与账号池——扫码收纳多个豆包账号、批量检测额度、失败自动换号、一键切换当前运行账号。",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "lib",
+    "locale",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "displayName": "豆包多账号",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings-plugins",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1-rc.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gwtwly-coder/dsh-connect-doubao-pool.git"
+  },
+  "homepage": "https://github.com/gwtwly-coder/dsh-connect-doubao-pool#readme",
+  "bugs": {
+    "url": "https://github.com/gwtwly-coder/dsh-connect-doubao-pool/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "doubao",
+    "豆包",
+    "account-pool"
+  ]
+}

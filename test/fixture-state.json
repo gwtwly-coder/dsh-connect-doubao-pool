@@ -1,0 +1,109 @@
+{
+    "ok":  true,
+    "plugin":  "dsh-connect-doubao-pool",
+    "enabled":  true,
+    "autoSwitch":  true,
+    "activeId":  "acc-mwye6l75-64fd72",
+    "liveCredentialPresent":  true,
+    "updatedAt":  1795752248010,
+    "ui":  {
+               "showComposer":  true
+           },
+    "activeAccount":  {
+                          "id":  "acc-mwye6l75-64fd72",
+                          "label":  "主号·豆包",
+                          "order":  2,
+                          "quota":  {
+                                        "plan":  "免费体验",
+                                        "planActive":  false,
+                                        "exhausted":  false,
+                                        "remainingPercent":  100,
+                                        "resetsAt":  1798336973875,
+                                        "resetUnknown":  false,
+                                        "startsOnUse":  true,
+                                        "windows":  [
+                                                        {
+                                                            "type":  "incentive",
+                                                            "label":  "活动赠送额度",
+                                                            "remainingPercent":  100,
+                                                            "resetsAt":  1798336973875,
+                                                            "resetUnknown":  false,
+                                                            "startsOnUse":  true
+                                                        }
+                                                    ],
+                                        "fetchedAt":  1795749620658
+                                    },
+                          "status":  {
+                                         "ok":  true,
+                                         "detail":  "signed in"
+                                     }
+                      },
+    "accounts":  [
+                     {
+                         "id":  "acc-mwyey63u-d9094d",
+                         "label":  "豆包账号 2",
+                         "uid":  "a306a38ee9136ccd3dc70dbef28aaddb",
+                         "order":  1,
+                         "active":  false,
+                         "createdAt":  1795749603884,
+                         "lastTestedAt":  1795749621991,
+                         "status":  {
+                                        "ok":  true,
+                                        "detail":  "signed in"
+                                    },
+                         "quota":  {
+                                       "plan":  "免费体验",
+                                       "planActive":  false,
+                                       "exhausted":  false,
+                                       "remainingPercent":  100,
+                                       "resetsAt":  1798336973875,
+                                       "resetUnknown":  false,
+                                       "startsOnUse":  true,
+                                       "windows":  [
+                                                       {
+                                                           "type":  "incentive",
+                                                           "label":  "活动赠送额度",
+                                                           "remainingPercent":  100,
+                                                           "resetsAt":  1798336973875,
+                                                           "resetUnknown":  false,
+                                                           "startsOnUse":  true
+                                                       }
+                                                   ],
+                                       "fetchedAt":  1795749621801
+                                   }
+                     },
+                     {
+                         "id":  "acc-mwye6l75-64fd72",
+                         "label":  "主号·豆包",
+                         "uid":  "23d8ffaa73453167e5e362dc028fcc11",
+                         "order":  2,
+                         "active":  true,
+                         "createdAt":  1795748013816,
+                         "lastTestedAt":  1795749621609,
+                         "status":  {
+                                        "ok":  true,
+                                        "detail":  "signed in"
+                                    },
+                         "quota":  {
+                                       "plan":  "免费体验",
+                                       "planActive":  false,
+                                       "exhausted":  false,
+                                       "remainingPercent":  100,
+                                       "resetsAt":  1798336973875,
+                                       "resetUnknown":  false,
+                                       "startsOnUse":  true,
+                                       "windows":  [
+                                                       {
+                                                           "type":  "incentive",
+                                                           "label":  "活动赠送额度",
+                                                           "remainingPercent":  100,
+                                                           "resetsAt":  1798336973875,
+                                                           "resetUnknown":  false,
+                                                           "startsOnUse":  true
+                                                       }
+                                                   ],
+                                       "fetchedAt":  1795749620658
+                                   }
+                     }
+                 ]
+}
